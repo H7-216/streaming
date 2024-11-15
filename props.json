@@ -1,0 +1,8 @@
+export const getStaticProps = async () => {
+  const recipes = [
+    { id: 1, title: "Pizza Margherita", description: "Simple et délicieuse", image: "/images/pizza.jpg" },
+    { id: 2, title: "Tiramisu", description: "Un dessert italien classique", image: "/images/tiramisu.jpg" },
+  ];
+
+  return { props: { recipes } };
+};
